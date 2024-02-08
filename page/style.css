@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 구간 */
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    /* position: fixed; */
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+    color: white;
+  }
+
+header {
+    color: black;
+  }
+  
+footer {
+    background-color: black;
+    color: white;
+}
+/* 구간 */
+
+
+/* header 편집 */
+.logo {
+    width: 70px;
+}
+
+.menu1 {
+    margin-left: 10px;
+}
+/* header 편집 */
+
+
+/* main 편집 */
+.backimg {
+    width: 100%;
+    height: 80%;
+}
+/* main 편집 */
+
+
+/* main2 편집 */
+.main2 {
+    color: black;
+    /* background-color: aqua; */
+}
+
+.imgall {
+    width: 300px;
+    height: 200px;
+}
+
+.img1 {
+    display: flex;
+    justify-content: end;
+}
+
+.img3 {
+    display: flex;
+    justify-content: end;
+}
+
+.comeload {
+    display: flex;
+    justify-content: center;
+}
+
+.comeload>h1 {
+    padding: 10px;
+}
+
+.loadimgdiv {
+    display: flex;
+    justify-content: center;
+}
+
+.loadimg {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 400px;
+}
+
+footer>span {
+    font-size: 10px;
+}
+
+/* main2 편집 */
