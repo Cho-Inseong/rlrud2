@@ -1,0 +1,313 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 그리드 */
+/* index page */
+
+/* 구간 편집 */
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr 1fr 100px;
+    grid-template-areas:
+    'header header'
+    'main main'
+    'main2 main2'
+    'footer footer';
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+.main2 {
+    grid-area: main2;
+}
+
+footer {
+    grid-area: footer;
+}
+/* 구간 편집 */
+
+/* 헤더 그리드 */
+.menu {
+    display: grid;
+    grid-template-columns: 3fr 876.5px 1fr ;
+    gap: 60px;
+    grid-template-areas:
+    'a b c';
+    align-items: center;
+}
+.menua {
+    grid-area: a;
+}
+.menub {
+    grid-area: b;
+}
+.menuc {
+    grid-area: c;
+}
+/* 헤더 그리드 */
+
+/* 메인2 그리드 */
+.imgtext {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+    'a b c'
+    'd e f'
+    'g h h';
+}
+
+.img1 {
+    grid-area: a;
+}
+
+.text1 {
+    grid-area: b;
+}
+
+.text2 {
+    grid-area: e;
+}
+
+.img2 {
+    grid-area: f;
+}
+
+.img3 {
+    grid-area: g;
+}
+
+.text3 {
+    grid-area: h;
+}
+/* 메인2 그리드 */
+/* index page */
+
+
+
+/* introduce page */
+
+/* main */
+.cam {
+    display: flex;
+    justify-content: center;
+}
+
+.f1img {
+    width: 550px;
+    height: 350px;
+}
+
+.introbaby2 {
+    display: flex;
+    align-items: center;
+}
+
+.f2img {
+    width: 550px;
+    height: 440px;
+}
+
+.f2 {
+    font-size: 13px;
+}
+
+.introdis {
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+}
+/* main */
+/* introduce page */
+/* 그리드 */
+
+/* style */
+/* index page style */
+
+/* 구간 */
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    padding: 10px 0;
+}
+
+.indexfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indexmain {
+    color: white;
+}
+
+.indexheader {
+    color: black;
+}
+
+.indexfooter {
+    background-color: black;
+    color: white;
+}
+/* 구간 */
+
+
+/* header 편집 */
+.logo {
+    width: 70px;
+}
+
+.menu1 {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration-line: none;
+    text-decoration: none;
+    color: #545151;
+}
+
+a:hover {
+    color: black;
+    font-weight: 900;
+}
+/* header 편집 */
+
+
+/* main 편집 */
+.backimg {
+    width: 100%;
+    height: 80%;
+}
+/* main 편집 */
+
+
+/* main2 편집 */
+.main2 {
+    color: black;
+    /* background-color: aqua; */
+}
+
+.imgall {
+    width: 300px;
+    height: 200px;
+}
+
+.img1 {
+    display: flex;
+    justify-content: end;
+}
+
+.img3 {
+    display: flex;
+    justify-content: end;
+}
+
+.comeload {
+    display: flex;
+    justify-content: center;
+}
+
+.comeload>h1 {
+    padding: 10px;
+}
+
+.loadimgdiv {
+    display: flex;
+    justify-content: center;
+}
+
+.loadimg {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 400px;
+}
+
+footer>span {
+    font-size: 10px;
+}
+
+/* main2 편집 */
+/* index page style */
+
+/* introduce page style */
+/* 구간 편집 */
+.introbody {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr ;
+    grid-template-areas:
+    'header header'
+    'main main'
+    
+}
+
+.introheader {
+    grid-area: header;
+}
+
+.intromain {
+    grid-area: main;
+}
+
+/* 구간 편집 */
+
+
+/* 헤더 그리드 */
+.menu {
+    display: grid;
+    grid-template-columns: 3fr 876.5px 1fr ;
+    gap: 60px;
+    grid-template-areas:
+    'a b c';
+    align-items: center;
+}
+.menua {
+    grid-area: a;
+}
+.menub {
+    grid-area: b;
+}
+.menuc {
+    grid-area: c;
+}
+/* 헤더 그리드 */
+
+.intropageintro {
+    color: black;
+    font-weight: 900;
+}
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    'a b';
+}
+
+.introbaby1 {
+    grid-area: a;
+}
+
+.introbaby2 {
+    grid-area: b;
+}
+/* introduce page style */
+/* style */

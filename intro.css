@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* header 편집 */
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 70px;
+}
+
+.menu1 {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration-line: none;
+    text-decoration: none;
+    color: black;
+}
+/* header 편집 */
+
+.cam {
+    display: flex;
+    justify-content: center;
+}
+
+.f1img {
+    width: 550px;
+    height: 350px;
+}
+
+.introbaby2 {
+    display: flex;
+    align-items: center;
+}
+
+.f2img {
+    width: 550px;
+    height: 440px;
+}
+
+.f2 {
+    font-size: 13px;
+}
+
+.introdis {
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+}
+
