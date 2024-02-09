@@ -143,6 +143,7 @@ header {
     align-items: center;
     position: fixed;
     padding: 10px 0;
+    z-index: 1;
 }
 
 .indexfooter {
@@ -176,9 +177,9 @@ header {
 }
 
 a {
-    text-decoration-line: none;
-    text-decoration: none;
-    color: #545151;
+    text-decoration-line: none !important;
+    text-decoration: none !important;
+    color: #545151 !important;
 }
 
 a:hover {
@@ -192,6 +193,16 @@ a:hover {
 .backimg {
     width: 100%;
     height: 80%;
+}
+
+.slideButton {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.slideButton>button {
+    font-size: 24px;
 }
 /* main 편집 */
 
