@@ -14,10 +14,10 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 60px 1fr 1fr 100px;
     grid-template-areas:
-    'header header'
-    'main main'
-    'main2 main2'
-    'footer footer';
+    'header'
+    'main'
+    'main2'
+    'footer';
 }
 
 header {
@@ -98,6 +98,25 @@ footer {
 
 
 /* introduce page */
+/* 헤더 그리드 */
+.menu {
+    display: grid;
+    grid-template-columns: 3fr 876.5px 1fr ;
+    gap: 60px;
+    grid-template-areas:
+    'a b c';
+    align-items: center;
+}
+.menua {
+    grid-area: a;
+}
+.menub {
+    grid-area: b;
+}
+.menuc {
+    grid-area: c;
+}
+/* 헤더 그리드 */
 
 /* main */
 .cam {
@@ -131,6 +150,18 @@ footer {
 }
 /* main */
 /* introduce page */
+
+/* reservation page */
+.reserbody {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr 100px;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+}
+/* reservation page */
 /* 그리드 */
 
 /* style */
@@ -280,27 +311,6 @@ footer>span {
 
 /* 구간 편집 */
 
-
-/* 헤더 그리드 */
-.menu {
-    display: grid;
-    grid-template-columns: 3fr 876.5px 1fr ;
-    gap: 60px;
-    grid-template-areas:
-    'a b c';
-    align-items: center;
-}
-.menua {
-    grid-area: a;
-}
-.menub {
-    grid-area: b;
-}
-.menuc {
-    grid-area: c;
-}
-/* 헤더 그리드 */
-
 .intropageintro {
     color: black;
     font-weight: 900;
@@ -321,4 +331,41 @@ footer>span {
     grid-area: b;
 }
 /* introduce page style */
+
+/* reservation page */
+.tablecenter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+/* .tablecenter>table {
+    margin: 0 auto;
+} */
+
+.reserall {
+    display: flex;
+    justify-content: end;
+    margin-right: 20PX;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.reserall>span {
+    margin-right: 20px;
+}
+
+.reser1 {
+    color: rgb(85, 215, 85);
+}
+
+.reser2 {
+    color:red;
+}
+
+.reser3 {
+    color: gray;
+}
+/* reservation page */
 /* style */
