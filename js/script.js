@@ -30,7 +30,9 @@ function reservation() {
     }
     // const reservationData =  fetchReservation();
     // console.log(reservationData);
-
+    const resDateTabelElem = document.querySelector("#resDateTable");
+    
+    
     for(let i = 0 ; i < 14; i++) {
         const date = new Date();
         date.setDate(date.getDate() + i);
@@ -39,9 +41,13 @@ function reservation() {
         const day = ("0" + (date.getDate())).slice(-2);
         let week = date.getDay();
     
-        // 조건식 ? 참일 떄의 값 : 거짓일 떄의 값;
-        week = ((week == 0) || (week == 6)) ? "주말" : "주중";
+        // 조건식 ? 참일 떄의 값 : 거짓일 떄의 값;     밑의 코드는 공부용 아무 쓰잘때기 없으요
+        const weekToString = ((week == 0) || (week == 6)) ? "주말" : "주중";
     
-        console.log(`${year}.${month}.${day} (${week})`);
+        console.log(`${year}.${month}.${day}`);
+        
+        let userTabelcountents = "";
+        userTabelcountents += `<td>${year}.${month}.${day} (${week})</td>`;
+        resDateTabelElem.innerHTML += userTabelcountents;
     }
 }

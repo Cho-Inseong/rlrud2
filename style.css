@@ -367,5 +367,14 @@ footer>span {
 .reser3 {
     color: gray;
 }
+
+.tablecenter table {
+    border-collapse: collapse;
+}
+
+.tablecenter table, .tablecenter tr, .tablecenter td , .tablecenter th {
+    text-align: center;
+    border: solid 1px black;
+}
 /* reservation page */
 /* style */
