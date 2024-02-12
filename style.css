@@ -376,5 +376,13 @@ footer>span {
     text-align: center;
     border: solid 1px black;
 }
+
+.r {
+    color: red;
+}
+
+.b {
+    color: blue;
+}
 /* reservation page */
 /* style */
