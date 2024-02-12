@@ -53,19 +53,43 @@ function reservation() {
         }else if (week == 0) {
             resDateTabelElem.innerHTML += `<td class='r'>${year}.${month}.${day}</td>`;
         }else {
-            resDateTabelElem.innerHTML += `<td>${year}.${month}.${day}</td>`;
+            resDateTabelElem.innerHTML += `<td class='c'>${year}.${month}.${day}</td>`;
         }
         
     }
-
-    async function printReservation() {
-        const reservation = await fetchReservation();
-        console.log(reservation[0]["D+0"][0]["status"]);
-        for (let i = 0; i < 17; i++){
-            document.querySelector(`#row${i}`).innerHTML += `<td>${reservation[0]["D+0"][i]["status"]}</td>`;
+    
+    for (let i = 0; i < 17; i++){
+        for (let k = 0; k < 14; k++){
+            document.querySelector(`#row${i}`).innerHTML += `<td></td>`;
         }
     }
-    printReservation();
+
+    async function updateReservation() {
+        const reservation = await fetchReservation();        
+        for (let i = 0; i < 17; i++){
+            for (let k = 0; k < 14; k++){
+                const data = reservation[k][`D+${k}`][i]["status"];
+                const tdElen = document.querySelector(`#row${i} > td:nth-of-type(${k + 2})`);
+                
+                if (data == "W") {
+                    tdElen.innerText = "●";
+                    tdElen.className = "w";
+                }else if (data == "R") {
+                    tdElen.innerText = "▲";
+                    tdElen.className = "r";
+                }else {
+                    tdElen.innerText = "■";
+                    tdElen.className = "c";
+                }
+                
+                
+                
+                
+                // document.querySelector(`#row${i}`).innerHTML += `<td>${reservation[k][`D+${k}`][i]["status"]}</td>`;
+            }
+        }
+    }
+    updateReservation();
 
 
 }

@@ -377,12 +377,21 @@ footer>span {
     border: solid 1px black;
 }
 
+.w {
+    color: green;
+    cursor: pointer;
+}
+
 .r {
     color: red;
 }
 
 .b {
     color: blue;
+}
+
+.c {
+    color: gray;
 }
 /* reservation page */
 /* style */
