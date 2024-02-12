@@ -393,5 +393,10 @@ footer>span {
 .c {
     color: gray;
 }
+
+.reserlink{
+    color: black;
+    font-weight: 900;
+} 
 /* reservation page */
 /* style */
