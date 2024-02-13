@@ -79,6 +79,7 @@ function reservation() {
                 if (data == "W") {
                     tdElem.innerText = "●";
                     tdElem.className = `w D+${k} ${i}`; // 번지수를 알기 위해서 클래스 이름으로 알기쉽게 
+                    tdElem.addEventListener("click", yaeyak);
                 }else if (data == "R") {
                     tdElem.innerText = "▲";
                     tdElem.className = `r D+${k} ${i}`;
@@ -100,6 +101,17 @@ function reservation() {
         updateReservation();
     }, 5000)
     updateReservation(); // 최초 접속 시 updateTeservation을 즉시 호출하여 페이지를 렌더링
-    
+}
 
+function yaeyak() {
+    const rowValue = this.classList[2];
+    let position;
+    if (rowValue <= 6 ) {
+        position = "A" + ("0" + (Number(rowValue) + 1)).slice(-2);
+    } else {
+        position = "T" + ("0" + (Number(rowValue) - 6)).slice(-2);
+    }
+
+    document.querySelector("#position").innerTEXT = `자리 : ${position}`;
+    $("#exampleModalLive").modal("show")
 }
