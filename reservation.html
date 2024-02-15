@@ -144,17 +144,18 @@
     <!-- Modal End -->
 
     <!-- Toast Start -->
-    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-            <div placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false"></div>
-            <strong class="me-auto">Bootstrap</strong>
-            <small>11 mins ago</small>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <strong class="me-auto">예약 안내</strong>
             <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            예약정보가 정상 등록되었습니다.<br>
+            관리자 승인 후 에약이 최종 완료됩니다.
+          </div>
         </div>
-        <div class="toast-body">
-            Hello, world! This is a toast message.
-        </div>
-    </div>
+      </div>
     <!-- Toast End -->
 
     <script src="./jquery/jquery-3.6.0.js"></script>

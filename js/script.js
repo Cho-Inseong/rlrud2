@@ -168,5 +168,12 @@ function reservationSubmit() {
         return alert("인증번호를 확인하여 주시기 바랍니다.");
     }
     $("#exampleModalLive").modal("hide");
-    alert("예약 완료");
+    // alert("예약 완료");
+    showToast();
+}
+
+function showToast() {
+    const toastLiveExample = document.getElementById('liveToast')
+    const toast = new bootstrap.Toast(toastLiveExample)
+    toast.show()
 }
