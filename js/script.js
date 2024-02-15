@@ -197,6 +197,7 @@ const gajaSetPrice = 4000;
 
 const orderArr = [0, 0, 0, 0, 0, 0];
 let totalPrice = 0;
+let orderCount = 0;
 
 function setPrice(product) {
     switch (product.id) {
@@ -231,4 +232,10 @@ function setPrice(product) {
 
 function babimodal() {
     $("#BabiqOrderModal").modal("show")
+}
+
+function babiqSubmit() {
+    $("#BabiqOrderModal").modal("hide");
+    orderCount++;
+    document.querySelector("#totalOrder").innerHTML = orderCount;
 }

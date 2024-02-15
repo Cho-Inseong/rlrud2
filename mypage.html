@@ -55,7 +55,7 @@
                     <td>예약 완료</td>
                     <td><button>예약 취소</button></td>
                     <td><button onclick="babimodal()">바비큐 주문하기</button></td>
-                    <td>0</td>
+                    <td id="totalOrder">0</td>
                     <td><button>주문 내역 보기</button></td>
                 </tr>
             </table>
@@ -108,7 +108,7 @@
             <div class="modal-footer">
                 <h5 id="totalPrice">총 주문 금액 : 0원</h5>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">주문하기</button>
+                <button type="button" class="btn btn-primary" onclick="babiqSubmit()">주문하기</button>
             </div>
         </div>
     </div>
