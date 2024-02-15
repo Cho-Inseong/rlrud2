@@ -204,19 +204,19 @@ function setPrice(product) {
             orderArr[0] = product.value;
         break;
         case 'pigBabiq':
-            orderArr[2] = product.value;
+            orderArr[1] = product.value;
         break;
         case 'haesanBabiq':
-            orderArr[3] = product.value;
+            orderArr[2] = product.value;
         break;
         case 'juice':
-            orderArr[4] = product.value;
+            orderArr[3] = product.value;
         break;
         case 'soju':
-            orderArr[5] = product.value;
+            orderArr[4] = product.value;
         break;
         case 'gajaSet':
-            orderArr[6] = product.value;
+            orderArr[5] = product.value;
         break;
     }
     const babiqGrillTotal = babiqGrillprice * orderArr[0]
