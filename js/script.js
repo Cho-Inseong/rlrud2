@@ -226,5 +226,5 @@ function setPrice(product) {
     const sojuTotal = sojuPrice * orderArr[4]
     const gajaSetTotal = gajaSetPrice * orderArr[5]
     totalPrice = babiqGrillTotal + pigBabiqTotal + haesanBabiqTotal + juiceTotal + sojuTotal + gajaSetTotal;
-    document.querySelector("#totalPrice").innerHTML = `총 주문 금액 : ${totalPrice}원`
+    document.querySelector("#totalPrice").innerHTML = `총 주문 금액 : ${totalPrice.toLocaleString()}원`
 }   
