@@ -185,3 +185,14 @@ function showToast() {
     const toast = new bootstrap.Toast(toastLiveExample)
     toast.show()
 }
+
+//  [akdlvpdlwl JS] //
+const babiqGrillprice = 10000;
+const pigBabiqPrice = 12000;
+const haesanBabiqPrice = 15000;
+const juicePrice = 3000;
+const sojuPrice = 5000;
+const gajaSetPrice = 4000;
+
+const orderArr = [0, 0, 0, 0, 0, 0];
+let totalPrice = 0;
