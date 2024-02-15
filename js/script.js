@@ -51,11 +51,11 @@ function reservation() {
         // innerHTML로 자바스크립트 언어를 HTML로 만들어 추가
         // 6은 토요일 0은 일요일 그외는 평일로 요일마다 색을 바꾸는 코드
         if(week == 6) {
-            resDateTabelElem.innerHTML += `<td class='b'>${year}.${month}.${day}</td>`;
+            resDateTabelElem.innerHTML += `<td id="D+${i}" class='b'>${year}.${month}.${day}</td>`;
         }else if (week == 0) {
-            resDateTabelElem.innerHTML += `<td class='r'>${year}.${month}.${day}</td>`;
+            resDateTabelElem.innerHTML += `<td id="D+${i}" class='r'>${year}.${month}.${day}</td>`;
         }else {
-            resDateTabelElem.innerHTML += `<td class='c'>${year}.${month}.${day}</td>`;
+            resDateTabelElem.innerHTML += `<td id="D+${i}" class='c'>${year}.${month}.${day}</td>`;
         }
         
     }
@@ -112,6 +112,60 @@ function yaeyak() {
         position = "T" + ("0" + (Number(rowValue) - 6)).slice(-2);
     }
 
-    document.querySelector("#position").innerTEXT = `자리 : ${position}`;
+    const week = document.getElementById(`${this.classList[1]}`).className
+
+    // 아이디가 this.classlist[1]인 Elem의 class 값을 가져와서 week 변수에 저장
+    let price;
+    if (week == "r" || week == "b") {
+        if (position.includes("A")) {
+            price = 30000;
+        } else {
+            price = 20000;
+        }
+    } else {
+        if (position.includes("A")) {
+            price = 25000;
+        } else {
+            price = 15000;
+        }
+    }
+
+    
+    document.querySelector("#position").innerText = `자리 : ${position}`
+    document.querySelector("#price").innerText = `금액 : ${price.toLocaleString()}원`;
     $("#exampleModalLive").modal("show")
+
+}
+
+// 휴대폰번호 정규포현식으로 3-4-4 만들기
+const regexPhoneNumber = (target) => {
+    target.value = target.value.replace(/[^0-9]/g, "").replace(/^(\d{3})(\d{4})(\d{4})/, `$1-$2-$3`);
+}
+
+// 인증번호 정규포현식
+const regexVerifyNumber = (target) => {
+    target.value = target.value.replace(/[^0-9]/g, "");
+}
+
+function sendVerifyNumber() {
+    if (document.querySelector("#phoneNumber").value.length == 13) {
+        document.querySelector("#phoneVerify").disabled = false;
+    } else {
+        alert("휴대폰 번호를 확인해 주세요.");
+    }
+}
+
+function reservationSubmit() {
+    const name = document.querySelector("#name").value;
+    const phoneNumver = document.querySelector("#phoneNumber").value;
+    const phoneVerify = document.querySelector("#phoneVerify").value;
+    if (!name) {
+        return alert("이름을 확인하여 주시기 바랍니다.");
+    } else if  (phoneNumver.length != 13) {
+        return alert("전화번호를 확인하여 주시기 바랍니다.");
+    } else if (phoneVerify != "1234") {
+        return alert("인증번호를 확인하여 주시기 바랍니다.");
+    }
+    $("#exampleModalLive").modal("hide");
+    alert("예약 완료");
 }

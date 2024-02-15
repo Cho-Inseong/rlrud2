@@ -125,8 +125,8 @@
                     <input type="text" id="name" class="form-control" placeholder="이름" aria-label="이름" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group mb-3">
-                    <input type="text" id="phoneNumber" class="form-control" placeholder="전화번호" aria-label="전호번호" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2" disabled>인증번호 발송</button>
+                    <input type="text" id="phoneNumber" class="form-control" placeholder="전화번호" aria-label="전호번호" aria-describedby="button-addon2" oninput="regexPhoneNumber(this)" maxlength="13">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2 "  onclick="sendVerifyNumber()">인증번호 발송</button>
                 </div>
                 <div class="input-group mb-3">
                     <input type="text" id="phoneVerify" class="form-control" placeholder="인증번호" aria-label="인증번호" aria-describedby="basic-addon1" disabled>
@@ -134,7 +134,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기다</button>
-              <button type="button" class="btn btn-primary">예약하기다</button>
+              <button type="button" class="btn btn-primary" onclick="reservationSubmit()">예약하기</button>
             </div>
           </div>
         </div>
