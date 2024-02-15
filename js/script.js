@@ -83,9 +83,11 @@ function reservation() {
                 }else if (data == "R") {
                     tdElem.innerText = "▲";
                     tdElem.className = `r D+${k} ${i}`;
+                    tdElem.addEventListener("click", noyaeyak);
                 }else {
                     tdElem.innerText = "■";
                     tdElem.className = `c D+${k} ${i}`;
+                    tdElem.addEventListener("click", noyaeyak);
                 }
                 
                 
@@ -137,6 +139,10 @@ function yaeyak() {
 
 }
 
+function noyaeyak() {
+    alert("예약하실 수 없습니다.")
+}
+
 // 휴대폰번호 정규포현식으로 3-4-4 만들기
 const regexPhoneNumber = (target) => {
     target.value = target.value.replace(/[^0-9]/g, "").replace(/^(\d{3})(\d{4})(\d{4})/, `$1-$2-$3`);
@@ -168,10 +174,12 @@ function reservationSubmit() {
         return alert("인증번호를 확인하여 주시기 바랍니다.");
     }
     $("#exampleModalLive").modal("hide");
-    // alert("예약 완료");
     showToast();
 }
 
+
+
+// 토스트 실행 함수
 function showToast() {
     const toastLiveExample = document.getElementById('liveToast')
     const toast = new bootstrap.Toast(toastLiveExample)

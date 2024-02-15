@@ -384,6 +384,7 @@ footer>span {
 
 .r {
     color: red;
+    cursor: not-allowed;
 }
 
 .b {
@@ -392,6 +393,7 @@ footer>span {
 
 .c {
     color: gray;
+    cursor: not-allowed;
 }
 
 .reserlink{
