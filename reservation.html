@@ -111,6 +111,8 @@
             * 하단메뉴 : 개인정보처리방침, 홈페이지 이용약관</br>
         </span>
     </footer>
+    
+    <!-- Modal Start -->
     <div class="modal fade" id="exampleModalLive" tabindex="-1" aria-labelledby="exampleModalLiveLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -129,7 +131,7 @@
                     <button class="btn btn-outline-secondary" type="button" id="button-addon2 "  onclick="sendVerifyNumber()">인증번호 발송</button>
                 </div>
                 <div class="input-group mb-3">
-                    <input type="text" id="phoneVerify" class="form-control" placeholder="인증번호" aria-label="인증번호" aria-describedby="basic-addon1" disabled>
+                    <input type="text" id="phoneVerify" class="form-control" placeholder="인증번호" aria-label="인증번호" aria-describedby="basic-addon1" maxlength="4" oninput="regexVerifyNumber(this)" disabled>
                 </div>
             </div>
             <div class="modal-footer">
@@ -139,6 +141,21 @@
           </div>
         </div>
     </div>
+    <!-- Modal End -->
+
+    <!-- Toast Start -->
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <div placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false"></div>
+            <strong class="me-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            Hello, world! This is a toast message.
+        </div>
+    </div>
+    <!-- Toast End -->
 
     <script src="./jquery/jquery-3.6.0.js"></script>
     <script src="./bootstrap/dist/js/bootstrap.js"></script>

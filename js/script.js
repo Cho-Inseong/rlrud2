@@ -142,6 +142,7 @@ const regexPhoneNumber = (target) => {
     target.value = target.value.replace(/[^0-9]/g, "").replace(/^(\d{3})(\d{4})(\d{4})/, `$1-$2-$3`);
 }
 
+
 // 인증번호 정규포현식
 const regexVerifyNumber = (target) => {
     target.value = target.value.replace(/[^0-9]/g, "");
