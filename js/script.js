@@ -227,4 +227,8 @@ function setPrice(product) {
     const gajaSetTotal = gajaSetPrice * orderArr[5]
     totalPrice = babiqGrillTotal + pigBabiqTotal + haesanBabiqTotal + juiceTotal + sojuTotal + gajaSetTotal;
     document.querySelector("#totalPrice").innerHTML = `총 주문 금액 : ${totalPrice.toLocaleString()}원`
-}   
+}  
+
+function babimodal() {
+    $("#BabiqOrderModal").modal("show")
+}
