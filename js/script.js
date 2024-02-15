@@ -186,7 +186,7 @@ function showToast() {
     toast.show()
 }
 
-//  [akdlvpdlwl JS] //
+//  [마이페이지 JS] //
 const babiqGrillprice = 10000;
 const pigBabiqPrice = 12000;
 const haesanBabiqPrice = 15000;
@@ -194,5 +194,37 @@ const juicePrice = 3000;
 const sojuPrice = 5000;
 const gajaSetPrice = 4000;
 
+
 const orderArr = [0, 0, 0, 0, 0, 0];
 let totalPrice = 0;
+
+function setPrice(product) {
+    switch (product.id) {
+        case 'babiqGrill':
+            orderArr[0] = product.value;
+        break;
+        case 'pigBabiq':
+            orderArr[2] = product.value;
+        break;
+        case 'haesanBabiq':
+            orderArr[3] = product.value;
+        break;
+        case 'juice':
+            orderArr[4] = product.value;
+        break;
+        case 'soju':
+            orderArr[5] = product.value;
+        break;
+        case 'gajaSet':
+            orderArr[6] = product.value;
+        break;
+    }
+    const babiqGrillTotal = babiqGrillprice * orderArr[0]
+    const pigBabiqTotal = pigBabiqPrice * orderArr[1]
+    const haesanBabiqTotal = haesanBabiqPrice * orderArr[2]
+    const juiceTotal = juicePrice * orderArr[3]
+    const sojuTotal = sojuPrice * orderArr[4]
+    const gajaSetTotal = gajaSetPrice * orderArr[5]
+    totalPrice = babiqGrillTotal + pigBabiqTotal + haesanBabiqTotal + juiceTotal + sojuTotal + gajaSetTotal;
+    document.querySelector("#totalPrice").innerHTML = `총 주문 금액 : ${totalPrice}원`
+}   
