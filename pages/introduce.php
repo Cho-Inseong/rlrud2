@@ -7,35 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="introbody">
-    <header class="introheader">
-        <a href="index.html">
-            <img class="logo" src="logo.jpg" alt="logo">
-        </a>
-        <div class="menu">
-            <div class="menua">
-                <a href="mypage.html">
-                    <span class="menu1">마이페이지</span>
-                </a>
-                <a href="reservation.html">
-                    <span>예약하기</span>
-                </a>
-                <a href="introduce.html">
-                    <span class="intropageintro">캠핑장소개</span>
-                </a>
-            </div>
-            <div class="menub">
-                <p>&nbsp;</p>
-            </div>
-            <div class="menuc">
-                <a href="#">
-                    <span>로그인</span>
-                </a>
-                <a href="#">
-                    <span>운영관리</span>   
-                </a>
-            </div>
-        </div>
-    </header>   
     <main class="intromain">
         <div class="cam">
             <h1>캠핑장 소개!</h1>

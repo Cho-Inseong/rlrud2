@@ -9,31 +9,37 @@ $resource = explode("/", $path[0]);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills Camping</title>
 </head>
+
 <body>
     <?php
+    include("./components/header.php");
     $page = "";
     switch ($resource[1]) {
         case '':
             $page = "./pages/main.php";
             break;
         case 'introduce':
-            $page = "./pages" . $resource[1] . ".php";
+            $page = "./pages/" . $resource[1] . ".php";
             break;
         case 'mypage':
-            $page = "./pages" . $resource[1] . ".php";
+            $page = "./pages/" . $resource[1] . ".php";
             break;
         case 'reservation':
-            $page = "./pages" . $resource[1] . ".php";
+            $page = "./pages/" . $resource[1] . ".php";
             break;
         default;
             $page = "./pages/main.php";
             break;
     }
+    include($page);
+    include("./components/footer.php");
     ?>
 </body>
+
 </html>

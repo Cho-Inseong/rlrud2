@@ -8,35 +8,6 @@
     <title>mypage</title>
 </head>
 <body>
-    <header class="introheader">
-        <a href="index.html">
-            <img class="logo" src="logo.jpg" alt="logo">
-        </a>
-        <div class="menu">
-            <div class="menua">
-                <a href="mypage.html">
-                    <span class="menu1 intropageintro">마이페이지</span>
-                </a>
-                <a href="reservation.html">
-                    <span>예약하기</span>
-                </a>
-                <a href="introduce.html">
-                    <span >캠핑장소개</span>
-                </a>
-            </div>
-            <div class="menub">
-                <p>&nbsp;</p>
-            </div>
-            <div class="menuc">
-                <a href="#">
-                    <span>로그인</span>
-                </a>
-                <a href="#">
-                    <span>운영관리</span>   
-                </a>
-            </div>
-        </div>
-    </header>
     <main>
         
         <div class="tablecenter">
@@ -62,15 +33,7 @@
             </table>
         </div>
     </main>
-    <footer class="indexfooter">
-        <span>
-            * Copyright : Copyright(C) Skills Camping All Rights Reserved.</br>
-            * 주소 : 충청남도 청양군 대치면 까치내로 123</br>
-            * 고객센터 전화번호 : 041-987-1234</br>
-            * 고객센터 운영시간 : 평일 09:00 ~ 18:00, 주말 10:00 ~ 15:00, 점심시간 12:30~13:30</br>
-            * 하단메뉴 : 개인정보처리방침, 홈페이지 이용약관</br>
-        </span>
-    </footer>
+
 <!-- 바비큐모달 시작 -->
 <div class="modal fade" id="BabiqOrderModal" tabindex="-1" aria-labelledby="exampleModalLiveLabel" aria-hidden="true">
     <div class="modal-dialog">
