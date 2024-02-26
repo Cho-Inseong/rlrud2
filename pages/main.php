@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.css">
-</head>
 <body class="indexbody"> 
     <main class="indexmain">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -82,11 +73,7 @@
             <img class="loadimg" src="location.jpg" alt="">
         </div>
     </main>
-    <script src="./jquery/jquery-3.6.0.js"></script> <!-- Bootstrap보다 위에 있어야 함-->
-    <script src="./bootstrap/dist/js/bootstrap.js"></script>
-    <script src="./js/script.js"></script>
     <script>
     carouselSlide();
     </script>
 </body>
-</html>

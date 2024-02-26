@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>introduce</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 <body class="introbody">
     <main class="intromain">
         <div class="cam">
@@ -87,4 +79,3 @@
         </div>
     </main>
 </body>
-</html>
